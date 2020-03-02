@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alfonso Millán Omil</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body class="home">
+        <div>
+            <div id="lang-selector"></div>
+            <div id="lang-selector-shade" onclick="closeLangSelector()"></div>
+            <div id="light" onclick="switchLight()"></div>
+        </div>
+        <div id="img-viewer" onclick="closeImgViewer()">
+            <div></div>
+            <div>
+                <img src="img/oppi-1.png"/>
+            </div>
+        </div>
+        <header id="header-home" class="home" onclick="navigate('home')">
+            <div id="header">
+                <img class="me" src="img/me.jpg"/>
+                <div>
+                    <h1>
+                        Alfonso Millán Omil
+                    </h1>
+                    <h3 data-i18n="software-engineer"></h3>
+                </div>
+            </div>
+            <section id="home" data-i18n="home-text"></section>
+        </header>
+        <nav class="menu">
+            <ul>
+                <li onclick="navigate('experience')" data-i18n="experience"></li>
+                <li onclick="navigate('education')" data-i18n="education"></li>
+                <li onclick="navigate('skills')" data-i18n="skills"></li>
+                <li onclick="navigate('projects')" data-i18n="projects"></li>
+                <li onclick="navigate('contact')" data-i18n="contact"></li>
+            </ul>
+        </nav>
+  <!--      <div id="content">
+            <section id="experience" class="hide">
+                <h1 data-i18n="experience"></h1>
+                <div id="jobs">
+                   
+                    <div class="date">2018/08 - 2019/10</div>
+                    <div class="lateral-bar"></div>
+                    <div class="job">
+                        <h2 data-i18n="software-engineer"></h2>
+                        <h3>
+                            <span>
+                                Akka Technologies, Lyon
+                            </span>
+                            (<span data-i18n="france"></span>)
+                        </h3>
+                        <ul>
+                            <li data-i18n="akka-1"></li>
+                            <li data-i18n="akka-2"></li>
+                            <li data-i18n="akka-3"></li>
+                        </ul>
+                        <p>
+                            <span data-i18n="note"></span>
+                            <span data-i18n="akkademy"></span>
+                        </p>
+                    </div>
+                    <--IMATIA->
+                    <div class="date">2017/05 - 2018/05</div>
+                    <div class="lateral-bar"></div>
+                    <div class="job">
+                        <h2 data-i18n="software-engineer"></h2>
+                        <h3>
+                            <span>
+                                Imatia Innovation, Ourense
+                            </span>
+                            (<span data-i18n="spain"></span>)
+                        </h3>
+                        <ul>
+                            <li data-i18n="imatia-1"></li>
+                        </ul>
+                    </div>
+                    <!--PLEXUS->
+                    <div class="date">2017/01 - 2017/05</div>
+                    <div class="lateral-bar"></div>
+                    <div class="job">
+                        <h2 data-i18n="junior-programmer"></h2>
+                        <h3>
+                            <span>
+                                Tecnologías Plexus, Ourense
+                            </span>
+                            (<span data-i18n="spain"></span>)
+                        </h3>
+                        <ul>
+                            <li data-i18n="plexus-1"></li>
+                        </ul>
+                    </div>
+                    <!--REDEGAL->
+                    <div class="date">2016/08 - 2016/12</div>
+                    <div class="lateral-bar"></div>
+                    <div class="job">
+                        <h2 data-i18n="software-engineer-rd"></h2>
+                        <h3>
+                            <span>
+                                Redegal, Ourense
+                            </span>
+                            (<span data-i18n="spain"></span>)
+                        </h3>
+                        <ul>
+                            <li data-i18n="redegal-1"></li>
+                            <li data-i18n="redegal-2"></li>
+                        </ul>
+                    </div>
+                    <!--CONCELLO->
+                    <div class="date">2012/04 - 2012/06</div>
+                    <div class="lateral-bar"></div>
+                    <div class="job">
+                        <h2 data-i18n="it-intern"></h2>
+                        <h3>
+                            <span>
+                                Concello de Bueu, Bueu
+                            </span>
+                            (<span data-i18n="spain"></span>)
+                        </h3>
+                        <ul>
+                            <li data-i18n="concello-1"></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="education" class="hide">
+                <h1 data-i18n="education"></h1>
+                <ul>
+                    <li>
+                        <div>
+                            <h2 data-i18n="bachelor"></h2>
+                            <span>2012 - 2016</span>
+                        </div>
+                        <h3>
+                            <span>Universidade de Vigo, Campus de Ourense, Ourense</span>
+                            (<span data-i18n="spain"></span>)
+                        </h3>
+                    </li>
+                    <li>
+                        <div>
+                            <h2 data-i18n="associate"></h2>
+                            <span>2010 - 2012</span>
+                        </div>
+                        <h3>
+                            <span>IES de Rodeira, Cangas do Morrazo</span>
+                            (<span data-i18n="spain"></span>)
+                        </h3>
+                    </li>
+                </ul>
+                <h4 data-i18n="courses"></h4>
+                <ul>
+                    <li>
+                        <div>
+                            <h2 data-i18n="angular-course"></h2>
+                            <span>2018</span>
+                        </div>
+                        <h3>
+                            <span>Vitae Consultores, A Coruña</span>
+                            (<span data-i18n="spain"></span>)
+                        </h3>
+                    </li>
+                    <li>
+                        <div>
+                            <h2 data-i18n="scrum-course"></h2>
+                            <span>2018</span>
+                        </div>
+                        <h3>
+                            <span>Vitae Consultores, A Coruña</span>
+                            (<span data-i18n="spain"></span>)
+                        </h3>
+                    </li>
+                    <li>
+                        <div>
+                            <h2 data-i18n="toeic"></h2>
+                            <span>2017</span>
+                        </div>
+                        <h3>
+                            <span>Multimedia School, Ourense</span>
+                            (<span data-i18n="spain"></span>)
+                        </h3>
+                    </li>
+                </ul>
+            </section>
+            <section id="skills" class="hide">
+                <h1 data-i18n="skills"></h1>
+                <h2 data-i18n="technologies" class="collapser"></h2>
+                <div class="collapsable collapsed">
+                    <p data-i18n="technologies-intro"></p>
+                    <ul>
+                        <li>
+                            <h2 data-i18n="programming-languages"></h2>
+                            <ul>
+                                <li>
+                                    <h3 class="collapser">HTML, CSS, JavaScript</h3>
+                                    <div class="collapsable collapsed">
+                                        <ul>
+                                            <li>
+                                                <span data-i18n="this-page"></span>,
+                                                (<a target="_blank" href="https://github.com/oknalv/oknalv.github.io" data-i18n="code"></a>)
+                                            </li>
+                                            <li>
+                                                <a target="_blank" href="https://oknalv.github.io/oppi">oppi</a>,
+                                                (<a target="_blank" href="https://github.com/oknalv/oppi" data-i18n="code"></a>) *
+                                            </li>
+                                            <li>
+                                                <a target="_blank" href="https://github.com/oknalv/piollo">piollo</a> *
+                                            </li>
+                                            <li>
+                                                <a target="_blank" href="http://linky-als.appspot.com/">linky</a>,
+                                                (<a target="_blank" href="https://github.com/oknalv/linky" data-i18n="code"></a>)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3 class="collapser">TypeScript</h3>
+                                    <div class="collapsable collapsed">
+                                        <ul>
+                                            <li>
+                                                <a target="_blank" href="https://oknalv.github.io/oppi">oppi</a>,
+                                                (<a target="_blank" href="https://github.com/oknalv/oppi" data-i18n="code"></a>) *
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3 class="collapser">Python</h3>
+                                    <div class="collapsable collapsed">
+                                        <ul>
+                                            <li>
+                                                <a target="_blank" href="https://github.com/oknalv/serkisplugin">serkisplugin</a> *
+                                            </li>
+                                            <li>
+                                                <a target="_blank" href="https://github.com/oknalv/keypointextractor">keypointextractor</a> *
+                                            </li>
+                                            <li>
+                                                <a target="_blank" href="https://github.com/oknalv/piollo">piollo</a> *
+                                            </li>
+                                            <li>
+                                                <a target="_blank" href="http://linky-als.appspot.com/">linky</a>,
+                                                (<a target="_blank" href="https://github.com/oknalv/linky" data-i18n="code"></a>)
+                                            </li>
+                                            <li>
+                                                <a target="_blank" href="https://github.com/oknalv/httpserver">httpserver</a>
+                                            </li>
+                                            <li>
+                                                <a target="_blank" href="https://gist.github.com/oknalv/861b8d52d20719544615d346f47abbb3">tiledownloader.py</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3>Java</h3>
+                                </li>
+                                <li>
+                                    <h3>PHP</h3>
+                                </li>
+                                <li>
+                                    <h3>SQL</h3>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2 data-i18n="frameworks-libraries"></h2>
+                            <ul>
+                                <li>
+                                    <h3 class="collapser">Angular</h3>
+                                    <div class="collapsable collapsed">
+                                        <ul>
+                                            <li>
+                                                <a target="_blank" href="https://oknalv.github.io/oppi">oppi</a>,
+                                                (<a target="_blank" href="https://github.com/oknalv/oppi" data-i18n="code"></a>) *
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3 class="collapser">RxJS</h3>
+                                    <div class="collapsable collapsed">
+                                        <ul>
+                                            <li>
+                                                <a target="_blank" href="https://oknalv.github.io/oppi">oppi</a>,
+                                                (<a target="_blank" href="https://github.com/oknalv/oppi" data-i18n="code"></a>) *
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3>Node.js, Express</h3>
+                                </li>
+                                <li>
+                                    <h3>Spring</h3>
+                                </li>
+                                <li>
+                                    <h3>SASS/SCSS</h3>
+                                </li>
+                                <li>
+                                    <h3>jQuery</h3>
+                                </li>
+                                <li>
+                                    <h3>Bootstrap</h3>
+                                </li>
+                                <li>
+                                    <h3 class="collapser">dlib</h3>
+                                    <div class="collapsable collapsed">
+                                        <ul>
+                                            <li>
+                                                <a target="_blank" href="https://github.com/oknalv/keypointextractor">keypointextractor</a> *
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3 class="collapser">OpenCV</h3>
+                                    <div class="collapsable collapsed">
+                                        <ul>
+                                            <li>
+                                                <a target="_blank" href="https://github.com/oknalv/keypointextractor">keypointextractor</a> *
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <h2 data-i18n="methodologies" class="collapser"></h2>
+                <div class="collapsable collapsed">
+                    <ul>
+                        <li>
+                            <h3>Scrum</h3>
+                        </li>
+                        <li>
+                            <h3>Kanban</h3>
+                        </li>
+                    </ul>
+                </div>
+                <h2 data-i18n="languages" class="collapser"></h2>
+                <div class="collapsable collapsed">
+                    <p data-i18n="languages-intro"></p>
+                    <ul>
+                        <li>
+                            <h3 class="collapser">
+                                <span data-i18n="spanish"></span>
+                                <span data-lang-level="6"></span>
+                            </h3>
+                            <div class="collapsable collapsed" data-i18n="about-spanish"></div>
+                        </li>
+                        <li>
+                            <h3 class="collapser">
+                                <span data-i18n="galician"></span>
+                                <span data-lang-level="6"></span>
+                            </h3>
+                            <div class="collapsable collapsed" data-i18n="about-galician"></div>
+                        </li>
+                        <li>
+                            <h3 class="collapser">
+                                <span data-i18n="english"></span>
+                                <span data-lang-level="4"></span>
+                            </h3>
+                            <div class="collapsable collapsed" data-i18n="about-english"></div>
+                        </li>
+                        <li>
+                            <h3 class="collapser">
+                                <span data-i18n="french"></span>
+                                <span data-lang-level="3"></span>
+                            </h3 class="collapser">
+                            <div class="collapsable collapsed" data-i18n="about-french"></div>
+                        </li>
+                        <li>
+                            <h3 class="collapser">
+                                <span data-i18n="portuguese"></span>
+                                <span data-lang-level="3"></span>
+                            </h3>
+                            <div class="collapsable collapsed" data-i18n="about-portuguese"></div>
+                        </li>
+                        <li>
+                            <h3 class="collapser">
+                                <span data-i18n="finnish"></span>
+                                <span data-lang-level="1"></span>
+                            </h3>
+                            <div class="collapsable collapsed">
+                                <span data-i18n="about-finnish-1"></span>
+                                <a target="_blank" href="https://oknalv.github.io/oppi">oppi</a>
+                                <span data-i18n="about-finnish-2"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3 class="collapser">
+                                <span data-i18n="polish"></span>
+                                <span data-lang-level="1"></span>
+                            </h3>
+                            <div class="collapsable collapsed" data-i18n="about-polish"></div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="projects" class="hide">
+                <h1 data-i18n="projects"></h1>
+                <header class="collapser">
+                    <h2>
+                        <img src="img/oppi.svg"/>
+                    </h2>
+                    <h3 data-i18n="oppi-brief"></h3>
+                </header>
+                <div class="collapsable collapsed">
+                    <ul>
+                        <li>
+                            <span data-i18n="page"></span> <a target="_blank" href="https://oknalv.github.io/oppi">https://oknalv.github.io/oppi</a>
+                        </li>
+                        <li>
+                            <span data-i18n="code"></span> <a target="_blank" href="https://github.com/oknalv/oppi">https://github.com/oknalv/oppi</a>
+                        </li>
+                        <li>
+                            <span data-i18n="screenshots" class="collapser"></span>
+                            <div class="collapsable collapsed">
+                                <div class="gallery">
+                                    <img src="img/oppi-1.png">
+                                    <img src="img/oppi-2.png">
+                                    <img src="img/oppi-3.png">
+                                    <img src="img/oppi-4.png">
+                                    <img src="img/oppi-5.png">
+                                    <img src="img/oppi-6.png">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div>
+                        <p data-i18n="about-oppi-1"></p>
+                        <p data-i18n="about-oppi-2"></p>
+                        <p data-i18n="about-oppi-3"></p>
+                        <p data-i18n="about-oppi-4"></p>
+                    </div>
+                </div>
+                <header class="collapser">
+                    <h2>
+                        <img src="img/piollo.svg"/>
+                    </h2>
+                    <h3 data-i18n="piollo-brief"></h3>
+                </header>
+                <div class="collapsable collapsed">
+                    <ul>
+                        <li>
+                            <span data-i18n="code"></span> <a target="_blank" href="https://github.com/oknalv/piollo">https://github.com/oknalv/piollo</a>
+                        </li>
+                    </ul>
+                    <p data-i18n="about-piollo-1"></p>
+                    <p data-i18n="about-piollo-2"></p>
+                </div>
+                <header class="collapser">
+                    <h2>
+                        <img src="img/keypointextractor.svg"/>
+                        <span data-i18n="tfg"></span>
+                    </h2>
+                    <h3 data-i18n="tfg-brief"></h3>
+                </header>
+                <div class="collapsable collapsed">
+                    <ul>
+                        <li>
+                            <span data-i18n="code"></span>
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="https://github.com/oknalv/keypointextractor">https://github.com/oknalv/keypointextractor</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://github.com/oknalv/serkisplugin">https://github.com/oknalv/serkisplugin</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span data-i18n="screenshots" class="collapser"></span>
+                            <div class="collapsable collapsed">
+                                <div class="gallery">
+                                    <img src="img/keypointextractor-1.png">
+                                    <img src="img/keypointextractor-2.png">
+                                    <img src="img/keypointextractor-3.png">
+                                    <img src="img/serkisplugin.png">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <p data-i18n="about-tfg-1"></p>
+                    <div class="video">
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/lC0uXMhHwX8"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p data-i18n="about-tfg-2"></p>
+                </div>
+            </section>
+            <section id="contact" class="hide">
+                <h1 data-i18n="contact"></h1>
+                <div>
+                        <a target="_blank" href="https://www.linkedin.com/in/eliotblancolebrero/">
+                            <img src="img/linkedin.svg"/>
+                            eliotblancolebrero
+                        </a>
+                        <a target="_blank" href="https://github.com/oknalv">
+                            <img src="img/github.svg"/>
+                            oknalv
+                        </a>
+                </div>
+            </section>
+        </div> -->
+    </body>
+    <script type="module" src="actions.js"></script>
+</html>
