@@ -1,6 +1,6 @@
 const i18nKeyValues = {
     "software-engineer": {
-        "en": "Software engineer",
+        "en": "Electronics engineer",
         "es": "Ingeniero de software",
         "fr": "Ingénieur logiciel",
         "gl": "Enxeñeiro de software"
@@ -30,10 +30,10 @@ const i18nKeyValues = {
         "gl": "Proxectos persoais"
     },
     "home-text": {
-        "en": "Hello, my name is Eliot and I am a Spanish software engineer specialized in web development and the purpose of this page is to show you a little bit about me. Something to start with: I love tortilla de patatas (without onion), churrasco, tartiflette, pierogi and salmorejo among other dishes, but, unless you want to invite me to dinner, let's focus on the reason why you are here, so I invite you to check more relevant information about me in the different sections of this page by clicking on the titles below.",
-        "es": "Hola, me llamo Eliot y soy un ingeniero de software español especializado en desarrollo web y el objetivo de esta página es mostraros un poco sobre mí. Algo con lo que empezar: me encanta la tortilla de patatas (sin cebolla), el churrasco, la tartiflette, los pierogi y el salmorejo entre otros platos, pero, a menos que queráis invitarme a cenar, centrémonos en la razón por la que estáis aquí, así que os invito a echarle un ojo a información sobre mí más relevante en las diferentes secciones de esta página haciendo click en los títulos de abajo.",
-        "fr": "Salut, je m'appelle Eliot et je suis un ingénieur logiciel spécialisé dans le développement web et le but de cette page est vous montrer un petit peu de moi. Pour commencer: j'adore la tortilla de patatas (sans oignon), le churrasco, la tartiflette, les pierogi et le salmorejo entre autres plats, mais, à moins que vous vouliez m'inviter à dîner, concentrons-nous sur la raison pour laquelle vous êtes ici, donc je vous invite à consulter des informations sur moi plus pertinentes dans les différentes sections de cette page en cliquant sur les titres ci-dessous.",
-        "gl": "Ola, chámome Eliot e sou un enxeñeiro de software español especializado en desenvolvemento web e o obxectivo desta páxina é amosarvos un pouco sobre min. Algo co que comezar: encántame a tortilla de patacas (sen cebola), o churrasco, a tartiflette, os pierogi e o salmorejo entre outros pratos, pero, a menos que queirades invitare a cear, centrémonos na razón pola que estades aquí, así que vos invito a botarlle un ollo a información sobre min máis relevante nas diferentes seccións desta páxina facendo click nos títulos de abaixo."
+        "en": "Hello, my name is Fonsi.",
+        "es": "Hola, me llamo Fonsi.",
+        "fr": "Salut, je m'appelle Fonsi.",
+        "gl": "Ola, chámome Fonsi ."
     },
     "france": {
         "en": "France",
